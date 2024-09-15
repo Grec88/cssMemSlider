@@ -522,6 +522,7 @@ body {
   height: inherit;
   overflow: hidden;
   display: flex;
+  transition: margin-left 0.5s linear;
 }
 
 .slide1{
@@ -550,18 +551,6 @@ body {
 
 .slider__description{
   transition: opacity 0.5s linear;
-}
-
-.animate-margin{
-  transition: margin-left 0.5s ease-in-out;
-}
-
-.hidden{
-  opacity: 0;
-}
-
-.show{
-  opacity: 1;
 }
 
 .slider__card{
@@ -626,3 +615,18 @@ body {
   background-color: white;
 }
 
+#slide1:checked ~ .slider__cards{
+margin-left: 0;
+}
+
+#slide2:checked ~ .slider__cards{
+  margin-left: -60vw;
+}
+
+#slide3:checked ~ .slider__cards{
+  margin-left: -120vw;
+}
+
+#slide4:checked ~ .slider__cards{
+  margin-left: -180vw;
+}
