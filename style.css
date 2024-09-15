@@ -581,34 +581,47 @@ body {
 
 .slider__controls{
   display: flex;
-  gap:1rem;
 } 
+
+.slider__control-wrapper{
+  width:2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 
 .slider__control{
   width: 1rem;
   height: 1rem;
+  box-sizing: border-box;
   border-radius: 100px;
-  background-color: 1B62B8;
+  background-color: #1B62B8;
   transition: color 0.5s linear;
   outline: 2px solid transparent;
   transition: all 0.4s linear;
 }
 
-.slider__control:hover{
+.slider__control-wrapper:focus{
+  outline: none;
+}
+
+.slider__control-wrapper:hover > .slider__control{
   cursor: pointer;
   background-color: white;
 }
 
-.slider__control:focus  {
+.slider__control-wrapper:focus > .slider__control{
   outline-color: rgb(27, 98, 184);
   background-color: transparent;
 } 
 
-.slider__control:focus:hover{
+.slider__control-wrapper:focus:hover > .slider__control{
   outline-color: white;
-}
+} 
 
-.slider__control:active{
+.slider__control-wrapper:active > .slider__control{
   outline: none;
   background-color: white;
 }
