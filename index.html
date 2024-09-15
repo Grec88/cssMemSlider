@@ -10,11 +10,11 @@
 <body>
   <main>
     <section class="slider">
+      <input id="slide1" type="radio" name="meme1">
+      <input id="slide2" type="radio" name="meme1">
+      <input id="slide3" type="radio" name="meme1">
+      <input id="slide4" type="radio" name="meme1">
       <div class="slider__wrapper">
-        <input id="slide1" type="radio" name="meme1">
-        <input id="slide2" type="radio" name="meme1">
-        <input id="slide3" type="radio" name="meme1">
-        <input id="slide4" type="radio" name="meme1">
         <div class="slider__cards">
           <div class="slider__card slide1"></div>
           <div class="slider__card slide2"></div>
@@ -23,10 +23,14 @@
         </div>
       </div>
       <div class="slider__info">
-        <p class="slider__description">Смешной анекдот</p>
-        <!-- <p class="slider__description">Смешной анекдот</p>
-        <p class="slider__description">Смешной анекдот</p>
-        <p class="slider__description">Смешной анекдот</p> -->
+        <div class="slider__descriptions-wrapper">
+          <div class="slider__descriptions">
+            <p class="slider__description">Смешной анекдот</p>
+            <p class="slider__description">Электричество</p>
+            <p class="slider__description">Вас не слышно</p>
+            <p class="slider__description">ИИ-художник</p>
+          </div>
+        </div>
         <div class="slider__controls">
           <label for="slide1" class="slider__control-wrapper" tabindex="0"><div class="slider__control"></div></label>
           <label for="slide2" class="slider__control-wrapper" tabindex="0"><div class="slider__control"></div></label>
