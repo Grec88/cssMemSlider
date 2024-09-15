@@ -568,7 +568,7 @@ body {
 .slider__card {
   width: 60vw;
   height: 50vw;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 .slider__info {
@@ -598,10 +598,10 @@ body {
   width: 1.5vw;
   height: 1.5vw;
   box-sizing: border-box;
-  border-radius: 100px;
+  border-radius: 10rem;
   background-color: #1b62b8;
   transition: color 0.5s linear;
-  outline: 2px solid transparent;
+  outline: 0.2rem solid transparent;
   transition: all 0.4s linear;
 }
 
